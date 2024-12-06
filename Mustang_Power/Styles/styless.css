@@ -1,0 +1,75 @@
+/* Body Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(250, 247, 247);
+    background-image: url('../images/america.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Centered Container Styling */
+.container {
+    max-width: 800px;
+    padding: 20px 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light, semi-transparent background */
+    border: 5px solid #14a8f2;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    font-size: 1.8em;
+    color: #14a8f2;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    border-top: 2px solid #14a8f2;
+}
+
+h3 {
+    font-size: 1.1em;
+    color: #800000;
+    margin-top: 20px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* List Styles */
+ul {
+    list-style-type: disc;
+    margin: 20px;
+    padding-left: 40px;
+}
+
+li {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Link Styling */
+a {
+    color: #14a8f2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ffffff;
+    background-color: #14a8f2;
+    padding: 5px;
+    border-radius: 5px;
+}

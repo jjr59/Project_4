@@ -1,0 +1,190 @@
+/*DEVELOPER: Jakub Rusek, IS117-xxx, Semester, Year */
+/* the styles for the elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: rgb(250, 247, 247);
+    background-image: url('../images/america.jpg'); /* Add the background image */
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 100%; /* Use full screen width */
+    max-width: 900px; /* Keep a maximum width for larger screens */
+    margin: 0 auto;
+    border: 5px solid #14a8f2; /* Increases the border width */
+    background-color: #f6f6f9; /* Fallback color */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+a:focus, a:hover {
+    font-style: italic;
+}
+/* the styles for the header */
+header {
+    padding: 1.5em 0 2em 0;
+    border-bottom: 5px solid #0a0c0d;
+    background-image: linear-gradient(
+        30deg, #add8e6 0%, #add8e6 30%, white 50%, #add8e6 80%, #add8e6 100%);
+}
+header h2 {
+    font-size: 175%;
+    color: #14a8f2;
+}
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+}
+header img {
+    float: left;
+    padding: 0 30px;
+}
+.shadow {
+    text-shadow: 2px 2px 2px #14a8f2;
+}
+/* the styles for the main content */
+main {
+    clear: left;
+    padding: 0 30px;
+}
+main h1 {
+    font-size: 150%;
+    padding: .3em 0;
+    border-top: 3px solid #14a8f2;
+    border-bottom: 3px solid #14a8f2;
+}
+main h2 {
+    color: #14a8f2;
+    font-size: 130%;
+    padding: .5em 0 .25em 0;
+}
+main h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+main img {
+    padding-bottom: 1em;
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+main p {
+    padding-bottom: .5em;
+}
+main blockquote {
+    padding: 0 2em;
+    font-style: italic;
+}
+main ul {
+    padding: 0 0 .25em 1.25em;
+}
+main li {
+    padding-bottom: .35em;
+}
+
+/* the styles for the article */
+article {
+    padding: .5em 0;
+    border-top: 2px solid #14a8f2;
+    border-bottom: 2px solid #14a8f2;
+}
+article h2 {
+    padding-top: 0;
+}
+article h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+
+/* the styles for the aside */
+aside h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+aside img {
+    padding-bottom: 1em;
+}
+
+/* the styles for the footer */
+footer {
+    background-color: #41b9fe;
+}
+footer p {
+    text-align: center;
+    color: white;
+    padding: 1em 0;
+}  
+
+/* Navigation Menu Styles */
+#nav_menu {
+    background-color: #14a8f2;  /* Background color for the nav bar */
+    padding: 10px; /* Padding around the nav bar */
+    border-bottom: 2px solid #ccc; /* Optional border for separation */
+}
+
+#nav_menu ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for horizontal layout */
+    gap: 10px; /* Space between items */
+}
+
+#nav_menu ul li {
+    display: inline; /* Make list items inline */
+}
+
+#nav_menu a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Default link color */
+    padding: 10px 15px; /* Padding for links */
+    border-radius: 4px; /* Optional rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+#nav_menu a:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+    color: #800000; /* Text color on hover */
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    body {
+        margin: 0; /* Remove margins on small screens */
+        border: none; /* Remove borders for cleaner layout */
+    }
+
+    header h2, header h3 {
+        text-align: center; /* Center header text */
+    }
+
+    header img {
+        display: none; /* Hide header image on small screens */
+    }
+
+    #nav_menu ul {
+        flex-direction: column; /* Stack navigation items */
+        align-items: center; /* Center-align stacked items */
+    }
+
+    #nav_menu a {
+        display: block; /* Make links block-level */
+        text-align: center; /* Center-align text */
+        padding: 10px 20px; /* Increase tap target size */
+    }
+
+    main, footer {
+        padding: 10px; /* Reduce padding */
+    }
+
+    main h1 {
+        font-size: 120%; /* Adjust font size */
+    }
+
+    main h2 {
+        font-size: 110%; /* Adjust font size */
+    }
+}

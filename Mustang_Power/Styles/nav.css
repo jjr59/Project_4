@@ -1,0 +1,16 @@
+<nav id="nav_menu">
+    <!-- Hamburger Menu for Mobile -->
+    <div id="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul>
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="mission.html">Our Mission</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Information</a></li>
+    </ul>
+</nav>
